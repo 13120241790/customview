@@ -27,4 +27,17 @@
         app:layout_constraintLeft_toRightOf="@id/tv1"
         app:layout_constraintTop_toTopOf="@id/tv1" />
 
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:onClick="surfaceViewLucyPan"
+        android:text="surface_lucypan"
+        app:layout_constraintLeft_toRightOf="@id/tv2"
+        app:layout_constraintTop_toTopOf="@id/tv1" />
+
+
+
+
 </android.support.constraint.ConstraintLayout>

@@ -22,4 +22,8 @@ public class MainActivity extends AppCompatActivity {
     public void showProgressBar(View view) {
         startActivity(new Intent(this, ShowProgressBarActivity.class));
     }
+
+    public void surfaceViewLucyPan(View view) {
+        startActivity(new Intent(this,ShowSurfaceViewLucyPanActivity.class));
+    }
 }
