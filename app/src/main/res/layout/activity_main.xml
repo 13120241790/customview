@@ -22,7 +22,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:text="Hello World!"
+        android:onClick="showProgressBar"
+        android:text="showProgressBar"
         app:layout_constraintLeft_toRightOf="@id/tv1"
         app:layout_constraintTop_toTopOf="@id/tv1" />
 
