@@ -20,6 +20,7 @@
         <activity android:name=".constraintlayout.ConstraintLayoutActivity" />
         <activity android:name=".ShowProgressBarActivity" />
         <activity android:name=".ShowSurfaceViewLucyPanActivity" />
+        <activity android:name=".JuLiveTextViewActivity" />
     </application>
 
 </manifest>

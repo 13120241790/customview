@@ -45,6 +45,13 @@
             zhy:progress_text_color="#ffF53B03"
             zhy:radius="60dp" />
 
+        <com.custom.view.progressbar.CustomProgressBar
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            zhy:circleWidth="5dp"
+            zhy:speed="20" />
+
+
     </LinearLayout>
 
 </ScrollView>

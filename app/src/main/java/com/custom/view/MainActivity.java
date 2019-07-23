@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.custom.view.constraintlayout.ConstraintLayoutActivity;
+import com.custom.view.julivetextview.JuLiveTextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,5 +26,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void surfaceViewLucyPan(View view) {
         startActivity(new Intent(this,ShowSurfaceViewLucyPanActivity.class));
+    }
+
+    public void juLiveTextView(View view) {
+        startActivity(new Intent(this, JuLiveTextViewActivity.class));
     }
 }

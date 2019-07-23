@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="firstColor" format="color" />
+    <attr name="secondColor" format="color" />
+    <attr name="circleWidth" format="dimension" />
+    <attr name="speed" format="integer" />
+
+    <declare-styleable name="CustomProgressBar">
+        <attr name="firstColor" />
+        <attr name="secondColor" />
+        <attr name="circleWidth" />
+        <attr name="speed" />
+    </declare-styleable>
+
+
+    <declare-styleable name="JuLiveTextView">
+        <attr name="Mode">
+            <enum name="Fillet" value="1" /> <!--圆角模式-->
+            <enum name="Circular" value="2" /><!--圆形模式-->
+        </attr>
+        <attr name="filletColor" format="color" /> <!--圆角模式下背景颜色-->
+        <attr name="filletRadius" format="dimension" /> <!--圆角模式下圆角半径-->
+        <attr name="circularColor" format="color" /> <!--圆形模式下边框线颜色-->
+        <attr name="circularLineSize" format="dimension" /> <!--圆形模式下边框线粗细-->
+    </declare-styleable>
+
+    <declare-styleable name="CircularTextView">
+        <attr name="circularRadius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="RectTextView">
+        <attr name="rectRadius" format="dimension" />
+        <attr name="rectColor" format="color" />
+    </declare-styleable>
+
+</resources>

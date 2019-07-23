@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.custom.view.julivetextview.JuLiveTextView
+        android:id="@+id/tv1"
+        android:layout_width="118dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="我是文案"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        android:visibility="gone"
+        zhy:Mode="Fillet"
+        zhy:filletColor="#00C0EB"
+        zhy:filletRadius="4dp"
+        zhy:layout_constraintLeft_toLeftOf="parent"
+        zhy:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.custom.view.julivetextview.JuLiveTextView
+        android:layout_width="230dp"
+        android:layout_height="44dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:text="我是文案"
+        android:textColor="#00C0EB"
+        android:textSize="16sp"
+        android:visibility="gone"
+        zhy:Mode="Circular"
+        zhy:circularColor="#00C0EB"
+        zhy:circularLineSize="1dp"
+        zhy:filletRadius="22dp"
+        zhy:layout_constraintLeft_toRightOf="@id/tv1"
+        zhy:layout_constraintTop_toTopOf="@id/tv1" />
+
+    <com.custom.view.julivetextview.CircularTextView
+        android:layout_width="230dp"
+        android:layout_height="44dp"
+        android:layout_margin="10dp"
+        android:text="我是文案"
+        android:textColor="#00C0EB"
+        android:textSize="16sp"
+        android:visibility="gone"
+        zhy:circularRadius="22dp"
+        zhy:layout_constraintLeft_toLeftOf="parent"
+        zhy:layout_constraintTop_toTopOf="parent" />
+
+    <com.custom.view.julivetextview.RectTextView
+        android:layout_width="118dp"
+        android:layout_height="42dp"
+        android:layout_margin="10dp"
+        android:text="我是文案"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        zhy:layout_constraintLeft_toLeftOf="parent"
+        zhy:layout_constraintTop_toTopOf="parent"
+        zhy:rectColor="#00C0EB"
+        zhy:rectRadius="4dp" />
+
+</android.support.constraint.ConstraintLayout>
