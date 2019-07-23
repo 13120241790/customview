@@ -1,4 +1,4 @@
-## 为解决项目开发中大量的 shape 资源文件定义工作, 只要需求的颜色、圆角角度或者其他参数有任意变化我都需要去新建一个 xml 资源文件，最后资源文件特别多写起来还有一定程度的费时力。故自定义控件来解决此问题
+- 为解决项目开发中大量的 shape 资源文件定义工作, 只要需求的颜色、圆角角度或者其他参数有任意变化我都需要去新建一个 xml 资源文件，最后资源文件特别多写起来还有一定程度的费时力。故自定义控件来解决此问题
 
 ### 效果
 
@@ -6,7 +6,7 @@
 
 ### 使用
 
-``
+```
 
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -108,12 +108,14 @@
 
 </android.support.constraint.ConstraintLayout>
 
+
+```
+
+
 RectTextView 为实心圆角矩形, 需要指定 rectColor 矩形背景颜色 以及 圆角角度自定义属性
 CircularTextView 空心边框线, 需要指定 circularRadius 圆角角度自定义属性
 
 RectTextView 和 CircularTextView 的点击事件和 TextView 一致
-
-``
 
 ## 了解更多
 
