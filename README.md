@@ -112,7 +112,7 @@
 ```
 
 
-RectTextView 为实心圆角矩形, 需要指定 rectColor 矩形背景颜色 以及 圆角角度自定义属性
+RectTextView 为实心圆角矩形, 需要指定 rectColor 矩形背景颜色 以及 圆角角度自定义属性<br/>
 CircularTextView 空心边框线, 需要指定 circularRadius 圆角角度自定义属性
 
 RectTextView 和 CircularTextView 的点击事件和 TextView 一致
