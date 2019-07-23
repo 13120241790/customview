@@ -1,65 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-
-    <com.custom.view.julivetextview.JuLiveTextView
-        android:id="@+id/tv1"
-        android:layout_width="118dp"
-        android:layout_height="42dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:text="我是文案"
-        android:textColor="#FFF"
-        android:textSize="16sp"
-        android:visibility="gone"
-        zhy:Mode="Fillet"
-        zhy:filletColor="#00C0EB"
-        zhy:filletRadius="4dp"
-        zhy:layout_constraintLeft_toLeftOf="parent"
-        zhy:layout_constraintTop_toTopOf="parent" />
-
-
-    <com.custom.view.julivetextview.JuLiveTextView
-        android:layout_width="230dp"
-        android:layout_height="44dp"
-        android:layout_marginLeft="10dp"
-        android:gravity="center"
-        android:text="我是文案"
-        android:textColor="#00C0EB"
-        android:textSize="16sp"
-        android:visibility="gone"
-        zhy:Mode="Circular"
-        zhy:circularColor="#00C0EB"
-        zhy:circularLineSize="1dp"
-        zhy:filletRadius="22dp"
-        zhy:layout_constraintLeft_toRightOf="@id/tv1"
-        zhy:layout_constraintTop_toTopOf="@id/tv1" />
-
-    <com.custom.view.julivetextview.CircularTextView
-        android:layout_width="230dp"
-        android:layout_height="44dp"
-        android:layout_margin="10dp"
-        android:text="我是文案"
-        android:textColor="#00C0EB"
-        android:textSize="16sp"
-        android:visibility="gone"
-        zhy:circularRadius="22dp"
-        zhy:layout_constraintLeft_toLeftOf="parent"
-        zhy:layout_constraintTop_toTopOf="parent" />
+    android:layout_height="match_parent"
+    android:background="#FFF">
 
     <com.custom.view.julivetextview.RectTextView
+        android:id="@+id/rt1"
+        android:layout_width="30dp"
+        android:layout_height="16dp"
+        android:layout_margin="20dp"
+        android:text="在售"
+        android:textColor="#12C48E"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rectColor="#E1FBF3"
+        app:rectRadius="2dp" />
+
+    <com.custom.view.julivetextview.RectTextView
+        android:id="@+id/rt2"
+        android:layout_width="30dp"
+        android:layout_height="16dp"
+        android:layout_margin="20dp"
+        android:text="待售"
+        android:textColor="#00C0EB"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toRightOf="@id/rt1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rectColor="#EFFBFE"
+        app:rectRadius="2dp" />
+
+    <com.custom.view.julivetextview.RectTextView
+        android:id="@+id/rt3"
+        android:layout_width="30dp"
+        android:layout_height="16dp"
+        android:layout_margin="20dp"
+        android:text="售罄"
+        android:textColor="#7E8C8F"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toRightOf="@id/rt2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rectColor="#F0F4F5"
+        app:rectRadius="2dp" />
+
+
+    <com.custom.view.julivetextview.RectTextView
+        android:id="@+id/rt4"
+        android:layout_width="52dp"
+        android:layout_height="16dp"
+        android:layout_margin="20dp"
+        android:text="标签样式"
+        android:textColor="#FFF"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toRightOf="@id/rt3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rectColor="#0DCDF8"
+        app:rectRadius="2dp" />
+
+
+    <com.custom.view.julivetextview.RectTextView
+        android:id="@+id/rt5"
         android:layout_width="118dp"
         android:layout_height="42dp"
-        android:layout_margin="10dp"
+        android:layout_margin="20dp"
         android:text="我是文案"
         android:textColor="#FFF"
         android:textSize="16sp"
-        zhy:layout_constraintLeft_toLeftOf="parent"
-        zhy:layout_constraintTop_toTopOf="parent"
-        zhy:rectColor="#00C0EB"
-        zhy:rectRadius="4dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rt1"
+        app:rectColor="#FA5F35"
+        app:rectRadius="4dp" />
+
+    <com.custom.view.julivetextview.CircularTextView
+        android:id="@+id/ct6"
+        android:layout_width="230dp"
+        android:layout_height="44dp"
+        android:layout_margin="20dp"
+        android:text="我是文案"
+        android:textColor="#00C0EB"
+        android:textSize="16sp"
+        app:circularRadius="22dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rt5" />
+
+    <com.custom.view.julivetextview.CircularTextView
+        android:layout_width="68dp"
+        android:layout_height="25dp"
+        android:layout_margin="20dp"
+        android:text="我是文案"
+        android:textColor="#FA5F35"
+        android:textSize="12sp"
+        app:circularRadius="12.5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ct6" />
+
 
 </android.support.constraint.ConstraintLayout>
