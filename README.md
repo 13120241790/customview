@@ -2,7 +2,7 @@
 
 ### 效果
 
-[!image](/image/SampleImage.png)
+![image](./image/SampleImage.png)
 
 ### 使用
 
