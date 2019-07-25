@@ -11,12 +11,14 @@ import android.util.AttributeSet;
 import android.view.Gravity;
 
 import com.custom.view.R;
-
+/**
+ * README.md : https://github.com/13120241790/customview
+ */
 public class CircularTextView extends AppCompatTextView {
 
     private float mCircularRadius;
 
-    private RectF circularRect;
+    private RectF mCircularRect;
 
     private Paint mPaint;
 
@@ -37,7 +39,7 @@ public class CircularTextView extends AppCompatTextView {
         mPaint.setColor(getCurrentTextColor());
         mPaint.setStrokeWidth(2);
         mPaint.setAntiAlias(true);
-        circularRect = new RectF();
+        mCircularRect = new RectF();
         setGravity(Gravity.CENTER);
         typedArray.recycle();
     }
@@ -45,10 +47,10 @@ public class CircularTextView extends AppCompatTextView {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        circularRect.left = 0;
-        circularRect.right = getWidth();
-        circularRect.top = 0;
-        circularRect.bottom = getHeight();
-        canvas.drawRoundRect(circularRect, mCircularRadius, mCircularRadius, mPaint);
+        mCircularRect.left = 0;
+        mCircularRect.right = getWidth();
+        mCircularRect.top = 0;
+        mCircularRect.bottom = getHeight();
+        canvas.drawRoundRect(mCircularRect, mCircularRadius, mCircularRadius, mPaint);
     }
 }
