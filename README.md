@@ -1,10 +1,125 @@
-- 为解决项目开发中大量的 shape 资源文件定义工作, 只要需求的颜色、圆角角度或者其他参数有任意变化都需要去新建一个 xml 资源文件，最后资源文件特别多写起来还有一定程度的费时力。故自定义控件来解决此问题
+# RectStateView
+## 应用场景
+![image](./image/RectStateViewA.png)
 
-### 效果
+## 实现效果
+![image](./image/20190725_165708.gif)
+
+
+## 使用方式
+
+RectStateView 的自定义属性
+
+``` XML
+
+  <declare-styleable name="RectStateView">
+        <attr name="rectBackgroundRadius" format="dimension" />
+        <attr name="leftIconSize" format="dimension" />
+        <attr name="rectColorUnchecked" format="color|reference" />
+        <attr name="rectColorChecked" format="color|reference" />
+        <attr name="leftIconUnchecked" format="reference" />
+        <attr name="leftIconChecked" format="reference" />
+        <attr name="textColorUnchecked" format="color|reference" />
+        <attr name="textColorChecked" format="color|reference" />
+        <attr name="textUnchecked" format="string|reference" />
+        <attr name="textChecked" format="string|reference" />
+        <attr name="textSize" format="dimension" />
+        <attr name="isSelected" format="boolean" />
+    </declare-styleable>
+
+
+```
+
+
+|自定义属性 | 释义 | 单位 | 是否必须指定 |
+|---------|------| ----- | -------|
+| rectBackgroundRadius | 矩形背景圆角角度 | dp | ✅ |
+| leftIconSize | 文字左侧 icon 大小 | dp | ❌ |
+| rectColorUnchecked | 矩形背景颜色 (未选中) | color | ✅ |
+| rectColorChecked | 矩形背景颜色 (选中) | color | ❌ |
+| leftIconUnchecked | 文本左侧小 icon (未选中) | drawable | ❌ |
+| leftIconChecked |  文本左侧小 icon (选中) | drawable | ❌ |
+| textColorUnchecked | 文本颜色 (未选中)| color |  ✅ |
+|textColorChecked|文本颜色 (选中)|color| ❌|
+| textUnchecked | 文本内容 (未选中) | string |  ✅|
+| textChecked | 文本内容 (选中) | string | ❌|
+| textSize | 文本大小 | dp | ✅ | 
+| isSelected | 默认的选中状态 | boolean | ❌|
+
+- 高亮色为未选中状态，默认也是这个状态。灰色为选中后的状态
+- 如果只需要使用未选中状态，checked 的选中状态非必须指定
+
+### 示例
+
+XML 
+
+``` XML
+
+    <com.custom.view.julivetextview.rectstateview.RectStateView
+        android:id="@+id/rsv"
+        android:layout_width="335dp"
+        android:layout_height="44dp"
+        android:layout_margin="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ct7"
+        app:leftIconChecked="@mipmap/house_dynamic_icon_check"
+        app:leftIconSize="16dp"
+        app:leftIconUnchecked="@mipmap/house_dynamic_icon"
+        app:rectBackgroundRadius="4dp"
+        app:rectColorChecked="#F5F5F5"
+        app:rectColorUnchecked="#EEF9FB"
+        app:textChecked="取消动态变动通知"
+        app:textColorChecked="#C4CBCC"
+        app:textColorUnchecked="#00C0EB"
+        app:textSize="14sp"
+        app:textUnchecked="动态变动通知我" />
+
+
+```
+
+java
+
+``` Java
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_ju_live_text_view);
+        RectStateView rectStateView = findViewById(R.id.rsv);
+        rectStateView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                boolean isSelected = v.isSelected();
+                if (isSelected) {
+                    //Do something ...
+                } else {
+                    //Do something ...
+                }
+                v.setSelected(!isSelected);
+            }
+        });
+
+    }
+
+```
+
+
+
+
+
+
+
+
+
+
+
+# RectTextView & CircularTextView
+
+## 效果
 
 ![image](./image/SampleImage.png)
 
-### 使用
+## 使用
 
 ``` XML
 
@@ -117,28 +232,7 @@ CircularTextView 空心边框线, 需要指定 circularRadius 圆角角度自定
 
 RectTextView 和 CircularTextView 的点击事件和 TextView 一致
 
-### 了解更多
 
-https://blog.csdn.net/qq_19986309/article/details/96989955  
-
-### TODO
-
-RectTextView 引用 Drawable left 间距问题
-
-RectTextView.java  
-
-```
-    public RectTextView(Context context, AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr);
-    ... 
-//        Drawable drawable = getResources().getDrawable(R.mipmap.ic_launcher);
-//        drawable.setBounds(0, 0, (int) getTextSize(), (int) getTextSize());
-//        Log.e("padding", "getCompoundPaddingLeft :" + getCompoundPaddingLeft());
-//        setCompoundDrawables(drawable, null, null, null);
-        typedArray.recycle();
-    }
-
-```
 
 
 
