@@ -85,6 +85,7 @@
         app:layout_constraintTop_toBottomOf="@id/rt5" />
 
     <com.custom.view.julivetextview.CircularTextView
+        android:id="@+id/ct7"
         android:layout_width="68dp"
         android:layout_height="25dp"
         android:layout_margin="20dp"
@@ -94,6 +95,25 @@
         app:circularRadius="12.5dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/ct6" />
+
+    <com.custom.view.julivetextview.rectstateview.RectStateView
+        android:id="@+id/rsv"
+        android:layout_width="335dp"
+        android:layout_height="44dp"
+        android:layout_margin="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ct7"
+        app:leftIconChecked="@mipmap/house_dynamic_icon_check"
+        app:leftIconSize="16dp"
+        app:leftIconUnchecked="@mipmap/house_dynamic_icon"
+        app:rectBackgroundRadius="4dp"
+        app:rectColorChecked="#F5F5F5"
+        app:rectColorUnchecked="#EEF9FB"
+        app:textChecked="取消动态变动通知"
+        app:textColorChecked="#C4CBCC"
+        app:textColorUnchecked="#00C0EB"
+        app:textSize="14sp"
+        app:textUnchecked="动态变动通知我" />
 
 
 </android.support.constraint.ConstraintLayout>
