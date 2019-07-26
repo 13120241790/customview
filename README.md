@@ -13,7 +13,7 @@
 RectStateView 的自定义属性
 
 |自定义属性 | 释义 | 单位 | 是否必须指定 |
-|---------|------| ----- | -------|
+|:---------:|:------:|:-----:|:-------:|
 | rectBackgroundRadius | 矩形背景圆角角度 | dp | ✅ |
 | leftIconSize | 文字左侧 icon 大小 | dp | ❌ |
 | rectColorUnchecked | 矩形背景颜色 (未选中) | color | ✅ |
