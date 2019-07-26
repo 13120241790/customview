@@ -35,11 +35,6 @@
     </declare-styleable>
 
 
-    <declare-styleable name="RectSubView">
-        <attr name="rectSubRadius" format="dimension" />
-        <attr name="rectSubColor" format="color" />
-    </declare-styleable>
-
     <declare-styleable name="RectStateView">
         <attr name="rectBackgroundRadius" format="dimension" />
         <attr name="leftIconSize" format="dimension" />
