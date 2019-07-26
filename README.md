@@ -4,7 +4,8 @@
 ## 应用场景
 ![image](./image/RectStateViewA.png)
 
-## Gif效果
+## Gif 效果 
+ps: gif 如果不动画是网络情况加载渲染慢，请稍等<br>
 ![image](./image/RectStateGif.gif)
 
 
