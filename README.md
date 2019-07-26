@@ -4,7 +4,7 @@
 ## 应用场景
 ![image](./image/RectStateViewA.png)
 
-## 实现效果
+## Gif效果
 ![image](./image/RectStateGif.gif)
 
 
