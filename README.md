@@ -1,3 +1,5 @@
+- 抽取和封装了一些设计稿上的通用控件
+
 # RectStateView
 ## 应用场景
 ![image](./image/RectStateViewA.png)
@@ -33,7 +35,7 @@ RectStateView 的自定义属性
 
 |自定义属性 | 释义 | 单位 | 是否必须指定 |
 |---------|------| ----- | -------|
-| rectBackgroundRadius | 矩形背景圆角角度 | dp | ✅ |
+| rectBackgroundRadius | 矩形背景圆角角度 | dp | ✅ |
 | leftIconSize | 文字左侧 icon 大小 | dp | ❌ |
 | rectColorUnchecked | 矩形背景颜色 (未选中) | color | ✅ |
 | rectColorChecked | 矩形背景颜色 (选中) | color | ❌ |
@@ -227,10 +229,16 @@ java
 ```
 
 
-RectTextView 为实心圆角矩形, 需要指定 rectColor 矩形背景颜色 以及 圆角角度自定义属性<br/>
+RectTextView 为实心圆角矩形, 需要指定 rectColor 矩形背景颜色 以及 圆角角度 rectRadius 自定义属性<br/>
 CircularTextView 空心边框线, 需要指定 circularRadius 圆角角度自定义属性
 
 RectTextView 和 CircularTextView 的点击事件和 TextView 一致
+
+## 待补充说明的控件
+
+- CountDownView 倒计时控件
+- SubItemTextView 通用 sub item 的 title 控件, 例如  【 户型介绍(11)     全部户型 > 】
+- SpecialPriceTextView 带文字横向居中划线的 TextView 用于标识原价被划除 , 使用时建议 left right 加 2dp padding
 
 
 
