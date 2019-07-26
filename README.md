@@ -5,7 +5,7 @@
 ![image](./image/RectStateViewA.png)
 
 ## 实现效果
-![image](./image/20190725_165708.gif)
+![image](./image/RectStateGif.gif)
 
 
 ## 使用方式
