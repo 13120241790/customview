@@ -12,27 +12,6 @@
 
 RectStateView 的自定义属性
 
-``` XML
-
-  <declare-styleable name="RectStateView">
-        <attr name="rectBackgroundRadius" format="dimension" />
-        <attr name="leftIconSize" format="dimension" />
-        <attr name="rectColorUnchecked" format="color|reference" />
-        <attr name="rectColorChecked" format="color|reference" />
-        <attr name="leftIconUnchecked" format="reference" />
-        <attr name="leftIconChecked" format="reference" />
-        <attr name="textColorUnchecked" format="color|reference" />
-        <attr name="textColorChecked" format="color|reference" />
-        <attr name="textUnchecked" format="string|reference" />
-        <attr name="textChecked" format="string|reference" />
-        <attr name="textSize" format="dimension" />
-        <attr name="isSelected" format="boolean" />
-    </declare-styleable>
-
-
-```
-
-
 |自定义属性 | 释义 | 单位 | 是否必须指定 |
 |---------|------| ----- | -------|
 | rectBackgroundRadius | 矩形背景圆角角度 | dp | ✅ |
